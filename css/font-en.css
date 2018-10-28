@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Butler_ExtraBold';
+    src: url('../fonts/Butler/Butler/Butler_ExtraBold.otf');
+    /* IE9 Compat Modes */
+    src: url('../fonts/Butler/Butler/Butler_ExtraBold.otf?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/Butler/Butler/Butler_ExtraBold.otf') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/Butler/Butler/Butler_ExtraBold.otf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/Butler/Butler/Butler_ExtraBold.otf') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/roboto/Roboto-Light.ttf');
+    /* IE9 Compat Modes */
+    src: url('../fonts/roboto/Roboto-Light.ttf?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/roboto/Roboto-Light.ttf') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/roboto/Roboto-Light.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/roboto/Roboto-Light.ttf') format('svg');
+    /* Legacy iOS */
+}

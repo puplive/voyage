@@ -60,7 +60,8 @@ input, select {
 
 *, :after, :before {
     -webkit-box-sizing: inherit;
-    box-sizing: inherit;
+    -moz-box-sizing: inherit;
+         box-sizing: inherit;
 }
 ul,li{
     list-style: none;

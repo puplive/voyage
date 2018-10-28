@@ -8,18 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="css/public.css">
     <link rel="stylesheet" type="text/css" href="css/style-en.css">
+    <link rel="stylesheet" type="text/css" href="css/adapt.css">
 </head>
 
 <body>
     <div class="main">
         <!-- 导航 -->
-        <div class="header con">
+        <div class="header con" id="header">
             <div class="hander_con">
                 <div class="header_box">
                     <a href="" class="logo">
-                    	<img src="img/logo.png">
+                        <img src="img/logo.png">
                     </a>
-                    <div class="nav_box">
+                    <div id="nav_box" class="nav_box">
                         <ul class="nav">
                             <li class="active"><a href="">HOME</a></li>
                             <li><a href="">PRODUCT</a></li>
@@ -31,12 +32,15 @@
                             <div>中文</div>
                         </div>
                     </div>
+                    <div id="nav_tab_btn" class="nav_tab_btn">
+                        <i></i>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- 面包屑 -->
-        <div class="con p_top-100">
+        <div class="con">
             <div class="link_3 m_top-30">
                 <a href="">Home</a>
                 <span class="span_1"> > </span>
@@ -58,13 +62,13 @@
         <div class="con">
             <ul class="img_list-3 clearfix m_top-50">
                 <li>
-                    <div style="background:url(img/ban.png) no-repeat center; background-size: cover; "></div>
+                    <img src="img/ban.png" alt="">
                 </li>
                 <li>
-                    <div style="background:url(img/ban.png) no-repeat center; background-size: cover; "></div>
+                    <img src="img/ban.png" alt="">
                 </li>
                 <li>
-                    <div style="background:url(img/ban.png) no-repeat center; background-size: cover; "></div>
+                    <img src="img/ban.png" alt="">
                 </li>
             </ul>
         </div>
@@ -79,13 +83,13 @@
         <div class="con">
             <ul class="img_list-3 clearfix m_top-50">
                 <li>
-                    <div style="background:url(img/ban.png) no-repeat center; background-size: cover; "></div>
+                    <img src="img/ban.png" alt="">
                 </li>
                 <li>
-                    <div style="background:url(img/ban.png) no-repeat center; background-size: cover; "></div>
+                    <img src="img/ban.png" alt="">
                 </li>
                 <li>
-                    <div style="background:url(img/ban.png) no-repeat center; background-size: cover; "></div>
+                    <img src="img/ban.png" alt="">
                 </li>
             </ul>
         </div>
@@ -117,6 +121,9 @@
             </div>
         </div>
     </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/public.js"></script>
 </body>
 
 </html>

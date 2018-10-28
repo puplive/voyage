@@ -1,106 +1,454 @@
-
-
-
-
-
-
-
-
 /*// 等于或大于  62*16 = 992px（pc窄屏）*/
 @media (max-width: 992px) {
 
-	.con {
-	    padding-left: 50px;
-	    padding-right: 50px;
-	}
-	.con_2{
-		padding-left: 25px;
-		padding-right: 25px;
-	}
-	.footer{
-		padding-top: 50px;
-		padding-bottom: 25px;
-	}
+    .con {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 
-	.footer_nav{
-		text-align: center;
-		margin-bottom: 40px;
-	}
+    .con_2 {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 
-	.footer_nav>a{
-		height: 30px;
-		margin-left: 40px;
-		margin-right: 40px;
-	}
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
 
-	.paging{
-		margin-top: 20px;
-	}
+    .footer_nav {
+        margin-bottom: 40px;
+    }
 
-	.box_1 {
-	    padding-bottom: 50px;
-	}
-	.box_2{
-		padding:25px;
-	}
+    .footer_nav>a {
+        height: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .paging {
+        margin-top: 20px;
+    }
+
+    .box_1 {
+        padding-bottom: 50px;
+    }
+
+    .box_2 {
+        padding: 25px;
+    }
 
 
-	.nav li {
-	    margin-right: 30px;
-	}
+    .nav li {
+        margin-right: 30px;
+    }
 
-	.list_3 {
-	    padding-top: 25px;
-	    padding-bottom: 25px;
-	}
+    .list_3 {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 
-	.list_3>.lis_3_item {
-	    padding-left: 25px;
-	    padding-right: 25px;
-	}
+    .list_3>.lis_3_item {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 
-	.list_3>.lis_3_item_text {
-	    padding-top: 25px;
-	    padding-bottom: 25px;
-	}
+    .list_3>.lis_3_item_text {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 
-	.lis_3_item_text .text_1 {
-	    margin-top: 15px;
-	    margin-bottom: 30px;
-	}
-	.list_4_item{
-		padding: 25px;
-	}
+    .lis_3_item_text .text_1 {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
 
-	.list_5{
-		margin-left: -15px;
-		margin-right: -15px;
-	}
-	.list_5>div{
-		padding-left: 15px;
-		padding-right: 15px;
-	}
+    .list_4_item {
+        padding: 25px;
+    }
 
-	.list_6{
-		margin-left: -10px;
-		margin-right: -10px;
-	}
+    .list_5 {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
 
-	.list_6_title{
-		display: flex;
-	    justify-content: space-between;
-	    align-items: center;
-	    margin: 10px 10px 7px;
-	}
+    .list_5>div {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .list_6 {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .list_6_item {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .list_6_title {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 10px 10px 7px;
+    }
+
+
+    /**/
+    .text_3 {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+
+    .label_3 {
+        /* padding-top: 50px; */
+        padding-left: 50px;
+        /*font-size: 12px;
+	    line-height: 16px;
+	    position: relative;*/
+        margin-top: 30px;
+    }
+
+    .label_3>i {
+        height: 30px;
+        width: 30px;
+        top: -3px;
+    }
+
+
+    /**/
+
+    .m_top-30 {
+        margin-top: 15px;
+    }
+
+    .m_top-40 {
+        margin-top: 20px;
+    }
+
+    .m_top-50 {
+        margin-top: 25px;
+    }
+
+    .m_top-80 {
+        margin-top: 40px;
+    }
+
+    .m_top-90 {
+        margin-top: 45px;
+    }
+
+    .m_top-100 {
+        margin-top: 50px;
+    }
+
+    .p_top-30 {
+        padding-top: 15px;
+    }
+
+    .p_top-40 {
+        padding-top: 20px;
+    }
+
+    .p_top-100 {
+        padding-top: 50px;
+    }
+
+    .p_top-120 {
+        padding-top: 60px;
+    }
+
+    .p_top-200 {
+        padding-top: 100px;
+    }
+
+    .p_bottom-100 {
+        padding-bottom: 50px;
+    }
+
+    .p_left-50 {
+        padding-left: 25px;
+    }
+
+    .p_right-50 {
+        padding-right: 25px;
+    }
+
 }
 
 
 /*// 等于或大于 48*16 = 768px(平板竖屏)*/
 @media (max-width: 768px) {
+
+    .con {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .con_2 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /*.footer{
+		padding-top: 50px;
+		padding-bottom: 25px;
+	}*/
+
+    /*.footer_nav{
+		margin-bottom: 40px;
+	}*/
+	.nav_tab_btn{
+		display: block;
+	}
+	
+	.nav_box{
+		display: none;
+		width: 100%;
+		background: #fff;
+		position: absolute;
+		left: 0;
+		top: 95px;
+
+		padding: 20px;
+	}
+	.nav{
+		width: 100%;
+	}
+	.nav>li{
+		width: 100%;
+		margin-right: 0;
+	}
+	.nav>li>a{
+		height: 40px;
+		line-height: 40px;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.language{
+		margin-top: 10px;
+	}
+
+    .footer_nav>a {
+        /*height: 30px;*/
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /*.paging{
+		margin-top: 20px;
+	}*/
+    .banner_txt h1 {
+        width: auto;
+        line-height: 60px;
+    }
+
+    .banner_nav_list a {
+        /*display: block;*/
+        /*width: 120px;*/
+        margin-right: 20px;
+        padding-bottom: 50px;
+    }
+
+    .banner_nav_list a:after {
+        height: 45px;
+    }
+
+    .box_1 {
+        padding-bottom: 20px;
+    }
+
+    .box_2 {
+        padding: 10px;
+    }
+
+    .box_4>div {
+        width: 100%;
+        float: left;
+    }
+
+    .text_box_1 {
+        display: block;
+    }
+
+    .nav li {
+        margin-right: 30px;
+    }
+
+    .list_3 {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .list_3>.lis_3_item {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .list_3>.lis_3_item_img {
+        /*width: 100%;*/
+        /*height: 100vw;*/
+        margin-top: 20px;
+    }
+
+    .list_3>.lis_3_item_img>img {
+        width: 100%;
+    }
+
+    .list_3>.lis_3_item_text {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .lis_3_item_text .text_1 {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .list_4 {
+        display: block;
+    }
+
+    .list_4_item {
+        padding: 10px;
+    }
+
+    .list_5 {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .list_5>div {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+    }
+
+    .list_5>div.list_5_text {
+        margin-top: 20px;
+    }
+
+
+    /*.list_6{
+		margin-left: -10px;
+		margin-right: -10px;
+	}*/
+    .list_6_item {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .list_6_title {
+        margin: 10px 10px 7px;
+    }
+
+    /*图片列表*/
+    .img_list-3 {
+        margin-left: -10px;
+        margin-right: -10px;
+
+        /*display: flex;*/
+    }
+
+    .img_list-3>li {
+        padding: 10px;
+        /*padding-right: 10px;*/
+
+        width: 100%;
+
+        /*height: 246px;*/
+
+    }
+
+    /**/
+    .text_3 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .label_3 {
+        margin-top: 20px;
+    }
+
+
+    /**/
+
+    .m_top-30 {
+        margin-top: 10px;
+    }
+
+    .m_top-40 {
+        margin-top: 10px;
+    }
+
+    .m_top-50 {
+        margin-top: 10px;
+    }
+
+    .m_top-80 {
+        margin-top: 20px;
+    }
+
+    .m_top-90 {
+        margin-top: 20px;
+    }
+
+    .m_top-100 {
+        margin-top: 50px;
+    }
+
+    .p_top-30 {
+        padding-top: 15px;
+    }
+
+    .p_top-40 {
+        padding-top: 20px;
+    }
+
+    .p_top-100 {
+        padding-top: 50px;
+    }
+
+    .p_top-120 {
+        padding-top: 60px;
+    }
+
+    .p_top-200 {
+        padding-top: 100px;
+    }
+
+    .p_bottom-100 {
+        padding-bottom: 50px;
+    }
+
+    .p_left-50 {
+        padding-left: 10px;
+    }
+
+    .p_right-50 {
+        padding-right: 10px;
+    }
+
+    .s_m_top-20 {
+        margin-top: 20px;
+    }
+
+    .s_m_bottom-20 {
+        margin-bottom: 20px;
+    }
 }
 
 /*// 等于或大于 34*16 = 544px（手机横屏）*/
-@media (max-width: 544px) { 
-
-}
-
+@media (max-width: 544px) {}

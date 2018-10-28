@@ -8,18 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="css/public.css">
     <link rel="stylesheet" type="text/css" href="css/style-en.css">
+    <link rel="stylesheet" type="text/css" href="css/adapt.css">
 </head>
 
 <body>
     <div class="main">
         <!-- 导航 -->
-        <div class="header con">
+        <div class="header con" id="header">
             <div class="hander_con">
                 <div class="header_box">
                     <a href="" class="logo">
-                    	<img src="img/logo.png">
+                        <img src="img/logo.png">
                     </a>
-                    <div class="nav_box">
+                    <div id="nav_box" class="nav_box">
                         <ul class="nav">
                             <li class="active"><a href="">HOME</a></li>
                             <li><a href="">PRODUCT</a></li>
@@ -30,6 +31,9 @@
                             <div class="active">EN</div>
                             <div>中文</div>
                         </div>
+                    </div>
+                    <div id="nav_tab_btn" class="nav_tab_btn">
+                        <i></i>
                     </div>
                 </div>
             </div>
@@ -55,7 +59,7 @@
                         <span>info@voyageinternationaltravel.com</span>
                     </div>
 
-                    <div class="m_top-40 p_top-40 border_1">
+                    <div class="box_6">
                         <p class="text_6">Please send us any questions using the form below. We will reply to your message within one business day.</p>
                     </div>
                     <div>
@@ -88,6 +92,9 @@
             </div>
         </div>
     </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/public.js"></script>
 </body>
 
 </html>

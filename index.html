@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="css/public.css">
     <link rel="stylesheet" type="text/css" href="css/style-en.css">
-    
+
     <link rel="stylesheet" type="text/css" href="css/adapt.css">
 
 </head>
@@ -16,13 +16,13 @@
 <body>
     <div class="main">
         <!-- 导航 -->
-        <div class="header con">
+        <div class="header con" id="header">
             <div class="hander_con">
                 <div class="header_box">
                     <a href="" class="logo">
                     	<img src="img/logo.png">
                     </a>
-                    <div class="nav_box">
+                    <div id="nav_box" class="nav_box">
                         <ul class="nav">
                             <li class="active"><a href="">HOME</a></li>
                             <li><a href="">PRODUCT</a></li>
@@ -33,6 +33,9 @@
                             <div class="active">EN</div>
                             <div>中文</div>
                         </div>
+                    </div>
+                    <div id="nav_tab_btn" class="nav_tab_btn">
+                    	<i></i>
                     </div>
                 </div>
             </div>
@@ -55,6 +58,8 @@
                         </div>
                     </div>
                 </div>
+
+                
             </div>
             <div class="banner_nav con">
                 <div class="">
@@ -121,13 +126,11 @@
                 		</a>
                     </div>
                     <div class="lis_3_item lis_3_item_img">
-                        <div style="background:url(img/ban.png) no-repeat center; background-size: cover; "></div>
+                    	<img src="img/ban.png" alt="">
                     </div>
                 </div>
                 <div class="list_3">
-                    <div class="lis_3_item lis_3_item_img">
-                        <div style="background:url(img/ban.png) no-repeat center; background-size: cover; "></div>
-                    </div>
+                    
                     <div class="lis_3_item lis_3_item_text">
                         <h2 class="title_2">Luxury Tour With Family</h2>
                         <p class="text_1">With so much to see and do in Iceland, it can be hard to choose an activity. Our diverse selection includes hiking, caving, glacier walks, ice climbing, mountain climbing, hunting for the Northern Lights and more!
@@ -136,6 +139,9 @@
                 			<span class="link_1-ico"></span>
                 			<span class="link_1-text">TRAVEL WITH ME</span>
                 		</a>
+                    </div>
+                    <div class="lis_3_item lis_3_item_img">
+                    	<img src="img/ban.png" alt="">
                     </div>
                 </div>
             </div>
@@ -159,13 +165,19 @@
 
             <ul class="img_list-3 clearfix m_top-50">
                 <li>
-                    <div style="background:url(img/ban.png) no-repeat center; background-size: cover; "></div>
+                    <!-- <div> -->
+                    	<img src="img/ban.png" alt="">
+                    <!-- </div> -->
                 </li>
                 <li>
-                    <div style="background:url(img/ban.png) no-repeat center; background-size: cover; "></div>
+                    <!-- <div> -->
+                    	<img src="img/ban.png" alt="">
+                    <!-- </div> -->
                 </li>
                 <li>
-                    <div style="background:url(img/ban.png) no-repeat center; background-size: cover; "></div>
+                    <!-- <div> -->
+                    	<img src="img/ban.png" alt="">
+                    <!-- </div> -->
                 </li>
             </ul>
 		</div>
@@ -184,6 +196,25 @@
             </div>
         </div>
     </div>
+	
+	<!-- 回到顶部 -->
+
+	<div class="go_top" id="go_top_box">
+		<div class="conact_btn">
+			<i class="i_email-2"></i>
+			<div class="conact_box">
+				<p>CONACT</p>
+				<span>dadasdas@adad.com</span>
+			</div>
+		</div>
+		<div id="go_top">
+			<i class="i_top"></i>
+		</div>
+	</div>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/public.js"></script>
 </body>
 
 </html>
