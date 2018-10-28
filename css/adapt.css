@@ -1,0 +1,106 @@
+
+
+
+
+
+
+
+
+/*// 等于或大于  62*16 = 992px（pc窄屏）*/
+@media (max-width: 992px) {
+
+	.con {
+	    padding-left: 50px;
+	    padding-right: 50px;
+	}
+	.con_2{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.footer{
+		padding-top: 50px;
+		padding-bottom: 25px;
+	}
+
+	.footer_nav{
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.footer_nav>a{
+		height: 30px;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+
+	.paging{
+		margin-top: 20px;
+	}
+
+	.box_1 {
+	    padding-bottom: 50px;
+	}
+	.box_2{
+		padding:25px;
+	}
+
+
+	.nav li {
+	    margin-right: 30px;
+	}
+
+	.list_3 {
+	    padding-top: 25px;
+	    padding-bottom: 25px;
+	}
+
+	.list_3>.lis_3_item {
+	    padding-left: 25px;
+	    padding-right: 25px;
+	}
+
+	.list_3>.lis_3_item_text {
+	    padding-top: 25px;
+	    padding-bottom: 25px;
+	}
+
+	.lis_3_item_text .text_1 {
+	    margin-top: 15px;
+	    margin-bottom: 30px;
+	}
+	.list_4_item{
+		padding: 25px;
+	}
+
+	.list_5{
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.list_5>div{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.list_6{
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+	.list_6_title{
+		display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    margin: 10px 10px 7px;
+	}
+}
+
+
+/*// 等于或大于 48*16 = 768px(平板竖屏)*/
+@media (max-width: 768px) {
+}
+
+/*// 等于或大于 34*16 = 544px（手机横屏）*/
+@media (max-width: 544px) { 
+
+}
+
