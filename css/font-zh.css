@@ -1,0 +1,28 @@
+
+/*中文*/
+
+@font-face {
+    font-family: 'Butler_ExtraBold';
+    src: url('../fonts/SourceHanSansCN/SourceHanSansCN-Bold.otf');
+}
+@font-face {
+    font-family: 'Butler-Bold';
+    src: url('../fonts/SourceHanSansCN/SourceHanSansCN-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/SourceHanSansCN/SourceHanSansCN-Light.otf');
+}
+@font-face {
+    font-family: 'Roboto-LightItalic';
+    src: url('../fonts/SourceHanSansCN/SourceHanSansCN-Light.otf');
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/SourceHanSansCN/SourceHanSansCN-Medium.otf');
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/SourceHanSansCN/SourceHanSansCN-Regular.otf');
+}
