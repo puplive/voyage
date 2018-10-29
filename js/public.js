@@ -36,4 +36,21 @@ $(function(){
  		}
  	});
 
+ 	var banner_n = 0;
+
+ 	function banner(id,n){
+
+ 		// var $ban = $('#')
+
+ 	}
+ 	var $banner_list = $('.banner_item');
+ 	$('#banner_nav ').on('click','.banner_nav_item', function(event) {
+ 		var $this = $(this),
+ 			n = $this.index();
+ 		console.log($banner_list.eq(n))
+ 		$banner_list.eq(n).animate({'opacity': 1},400,function(){console.log(n)})
+ 		// .siblings('.banner_item').animate({'opcity': 0},400);
+
+ 	});
+
 })

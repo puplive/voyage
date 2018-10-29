@@ -262,11 +262,17 @@
 }
 
 .banner_item {
-    /*opacity: 0;*/
+    opacity: 0;
     display: none;
     height: 100%;
     width: 100%;
     position: relative;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.banner_item.active{
+    opacity: 1;
 }
 
 .banner_img {
