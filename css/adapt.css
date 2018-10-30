@@ -448,6 +448,17 @@
     .s_m_bottom-20 {
         margin-bottom: 20px;
     }
+
+    .roll_btn{
+        height: 40px;
+        width: 40px;
+    }
+    .roll_btn.left_btn{
+        left: 20px;
+    }
+    .roll_btn.right_btn{
+        right: 20px;
+    }
 }
 
 /*// 等于或大于 34*16 = 544px（手机横屏）*/
