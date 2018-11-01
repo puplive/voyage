@@ -15,7 +15,7 @@ $(function() {
     });
     $('.c_select_list').on('click', '.c_select_item', function(event) {
         var $this = $(this);
-        $this.addClass('active').siblings('.c_select_item').removeClass('active')
+        // $this.addClass('active').siblings('.c_select_item').removeClass('active')
         $this.parent('.c_select_list').prev('.c_select_btn').text($this.text()).parent('.c_select').removeClass('on');
     });
 
@@ -35,6 +35,12 @@ $(function() {
         }
     });
 
+    // 语言 切换
+    $('.language').on('click', 'div', function(event) {
+        /* Act on the event */
+        $(this).addClass('active').siblings('div').removeClass('active')
+    });
+
     // var banner_n = 0;
     // banner
     var $banner_list = $('.banner_item');
@@ -46,33 +52,45 @@ $(function() {
     });
 
     // img
-    // var img_w = $('.j_img').eq(0).width();
 
-    // $('.j_img').height(img_w*272/407);
-    img_box('j_img', 407, 272);
+    img_box('j_img', 407, 272,img_hover);
     img_box('j_img-2', 370, 246);
 
-    $('.j_img').hover(function() {
-        var $this = $(this);
-        $this.css({
-            width: $this.width() + 30,
-            height: $this.height() + 30,
-            margin: -15
-        });
-    }, function() {
-        var $this = $(this);
-        $this.css({
-            width: $this.width() - 30,
-            height: $this.height() - 30,
-            margin: 0
-        });
+    $(window).resize(function(event) {
+        // window.location.reload()
+    //     /* Act on the event */
+        img_box('j_img', 407, 272,img_hover);
+        img_box('j_img-2', 370, 246);
+        banner_2();
     });
 
+    function img_hover(cl,w,h){
+        $('.'+cl).off();
+        $('.'+cl).hover(function() {
+            var $this = $(this);
+            $this.animate({
+                width: w + 30,
+                height: h + 30,
+                margin: -15},
+                200
+            );
+        }, function() {
+            var $this = $(this);
+            $this.animate({
+                width: w,
+                height: h,
+                margin: 0},
+                200
+            );
+        });
+    }
+
     // 
-    function img_box(cl, w, h) {
+    function img_box(cl, w, h,call) {
         if ($('.' + cl)) {
             var img_w = $('.' + cl).eq(0).width();
-            $('.' + cl).height(img_w * h / w)
+            $('.' + cl).height(img_w * h / w);
+            call&&call(cl, img_w, img_w * h / w);
         }
     }
 
@@ -151,6 +169,7 @@ $(function() {
         $item.width(w).height(h);
         $box.height(h);
 
+        $('#det_img_btn_r').off();
         $('#det_img_btn_r').on('click', function(event) {
             var ml = parseInt($list.css('marginLeft')),
                 ml_2 = ml - w;
@@ -166,7 +185,7 @@ $(function() {
                 }
             });
         });
-
+        $('#det_img_btn_l').off();
         $('#det_img_btn_l').on('click', function(event) {
             var ml = parseInt($list.css('marginLeft')),
                 ml_2 = ml + w;
@@ -183,6 +202,7 @@ $(function() {
             });
         });
 
+        $btn_list.off();
         $btn_list.on('click', function(event) {
             var $this = $(this),
                 index = $this.index();

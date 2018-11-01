@@ -44,7 +44,7 @@
     padding-bottom: 50px;
     background: url(../img/footer_bg.png) no-repeat center;
     -moz-background-size: cover;
-    background-size: cover;
+         background-size: cover;
 }
 
 .footer_nav {
@@ -106,7 +106,7 @@
 
 .hander_con {
     /*padding-top: 30px;
-	padding-bottom: */
+    padding-bottom: */
 }
 
 .header_box {
@@ -243,17 +243,15 @@
     height: 100vh;
     background: #000;
     -webkit-box-sizing: border-box;
-
     -moz-box-sizing: border-box;
-
     box-sizing: border-box;
     position: relative;
 
 }
 
 /*.banner{
-	height: inherit;
-	width: inherit;
+    height: inherit;
+    width: inherit;
 }*/
 .banner_list {
     height: inherit;
@@ -444,6 +442,7 @@
     width: inherit;
     height: inherit;
     position: relative;
+    transition: width .2s,height .2s,margin-top .2s,margin-left .2s;
 }
 
 .img_list-2>li.active>div,
@@ -452,6 +451,24 @@
     height: 528px;
     margin-top: -24px;
     margin-left: -15px;
+    /*animation:myfirst .2s forwards;*/
+
+}
+
+@keyframes myfirst
+{
+    0%   {
+        width: 288px;
+        height: 480px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    100% {
+        width: 318px;
+        height: 528px;
+        margin-top: -24px;
+        margin-left: -15px;
+    }
 }
 
 .img_list-2 {
@@ -491,7 +508,10 @@
 }
 
 .roll_btn.left_btn{
-    transform: scale(-1,1);
+    -webkit-transform: scale(-1,1);
+       -moz-transform: scale(-1,1);
+        -ms-transform: scale(-1,1);
+            transform: scale(-1,1);
     left: 50px;
     display: none;
 }
@@ -521,7 +541,10 @@
 
 .det_img_btn.left_btn{
     left: 20px;
-    transform: scale(-1,1);
+    -webkit-transform: scale(-1,1);
+       -moz-transform: scale(-1,1);
+        -ms-transform: scale(-1,1);
+            transform: scale(-1,1);
 }
 
 /**/
@@ -860,7 +883,7 @@
     float: left;
     padding: 17px;
     /*padding-left: 17px;
-	padding-right: 17px;*/
+    padding-right: 17px;*/
 }
 
 .list_6_con {
@@ -906,7 +929,7 @@
 }
 
 /*.list_6_title{
-	margin: 20px;
+    margin: 20px;
 }*/
 
 /*文字*/
@@ -1314,7 +1337,9 @@
     height: 272px;
 }
 .img_list-3>li>div:hover{
-    box-shadow: 0 0 20px rgba(0,0,0,.3)
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,.3);
+       -moz-box-shadow: 0 0 20px rgba(0,0,0,.3);
+            box-shadow: 0 0 20px rgba(0,0,0,.3)
 }
 /*.img_list-3>li>img {
     height: 100%;
@@ -1362,14 +1387,17 @@
 /*select*/
 .c_select {
     width: 132px;
+    display: inline-block;
+    text-align: left;
     height: 32px;
-    /*line-height: 30px;*/
+    margin-left: 10px;
+    /* line-height: 30px; */
     border: 1px solid #C49E57;
     cursor: pointer;
     color: #C49E57;
     position: relative;
     z-index: 101;
-    font-family: Roboto-Regular,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif
+    font-family: Roboto-Regular,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
 }
 
 .c_select_btn {
@@ -1420,14 +1448,15 @@
 
 
 .c_select_list>li.c_select_item:hover {
-    background: #f8f8f8;
-    /*color: #fff;*/
-}
-
-.c_select_list>li.c_select_item.active {
+    /*background: #f8f8f8;*/
     background: #C49E57;
     color: #fff;
 }
+
+/*.c_select_list>li.c_select_item.active {
+    background: #C49E57;
+    color: #fff;
+}*/
 
 /*.c_select_list>li.c_select_item:active{
     background: #C49E57;
@@ -1440,7 +1469,9 @@
     right: 20px;
 
     width: 55px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+       -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
     background: #fff;
     cursor: pointer;
     display: none;
@@ -1449,7 +1480,9 @@
 .go_top>div {
     height: 55px;
     width: 55px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 11px;
     position: relative;
 }
@@ -1473,7 +1506,9 @@
     text-align: right;
     right: 70px;
     top: 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+       -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
     display: none;
 
 }
@@ -1499,6 +1534,7 @@
 .conact_box p {
     color: #999;
     font-size: 14px;
+    font-family: Roboto-Light,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif
 }
 
 .conact_box span {
@@ -1506,6 +1542,8 @@
     color: #333;
     font-size: 14px;
     margin-top: 10px;
+    font-family: Roboto-Regular,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif
+
 }
 
 /*===========公共 样式=============*/
@@ -1587,6 +1625,9 @@
     float: right;
 }
 
+.t_align-r{
+    text-align: right;
+}
 
 button {
     background: none;

@@ -88,18 +88,6 @@
     }
 
     .list_6_title {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-        -moz-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -webkit-box-align: center;
-        -moz-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
         margin: 10px 10px 7px;
     }
 
@@ -115,8 +103,8 @@
         /* padding-top: 50px; */
         padding-left: 50px;
         /*font-size: 12px;
-	    line-height: 16px;
-	    position: relative;*/
+        line-height: 16px;
+        position: relative;*/
         margin-top: 30px;
     }
 
@@ -202,43 +190,50 @@
     }
 
     /*.footer{
-		padding-top: 50px;
-		padding-bottom: 25px;
-	}*/
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }*/
 
     /*.footer_nav{
-		margin-bottom: 40px;
-	}*/
-	.nav_tab_btn{
-		display: block;
-	}
-	
-	.nav_box{
-		display: none;
-		width: 100%;
-		background: #fff;
-		position: absolute;
-		left: 0;
-		top: 95px;
+        margin-bottom: 40px;
+    }*/
+    .nav_tab_btn{
+        display: block;
+    }
+    
+    .box_3{
+        display: block;
+    }
+    .box_3 .link_1{
+        text-align: right;
+        margin-top: 10px;
+    }
+    .nav_box{
+        display: none;
+        width: 100%;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        top: 95px;
 
-		padding: 20px;
-	}
-	.nav{
-		width: 100%;
-	}
-	.nav>li{
-		width: 100%;
-		margin-right: 0;
-	}
-	.nav>li>a{
-		height: 40px;
-		line-height: 40px;
-		padding-right: 10px;
-		padding-left: 10px;
-	}
-	.language{
-		margin-top: 10px;
-	}
+        padding: 20px;
+    }
+    .nav{
+        width: 100%;
+    }
+    .nav>li{
+        width: 100%;
+        margin-right: 0;
+    }
+    .nav>li>a{
+        height: 40px;
+        line-height: 40px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .language{
+        margin-top: 10px;
+    }
 
     .footer_nav>a {
         /*height: 30px;*/
@@ -247,8 +242,8 @@
     }
 
     /*.paging{
-		margin-top: 20px;
-	}*/
+        margin-top: 20px;
+    }*/
     .banner_txt h1 {
         width: auto;
         line-height: 60px;
@@ -342,9 +337,9 @@
 
 
     /*.list_6{
-		margin-left: -10px;
-		margin-right: -10px;
-	}*/
+        margin-left: -10px;
+        margin-right: -10px;
+    }*/
     .list_6_item {
         width: 100%;
         padding: 10px;
