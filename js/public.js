@@ -18,6 +18,11 @@ $(function() {
         // $this.addClass('active').siblings('.c_select_item').removeClass('active')
         $this.parent('.c_select_list').prev('.c_select_btn').text($this.text()).parent('.c_select').removeClass('on');
     });
+    $(".c_select").blur(function(event) {
+        /* Act on the event */
+        $(this).removeClass('on');
+    });
+
 
     // 回到顶部
     $("#go_top").click(function() {
@@ -38,7 +43,16 @@ $(function() {
     // 语言 切换
     $('.language').on('click', 'div', function(event) {
         /* Act on the event */
-        $(this).addClass('active').siblings('div').removeClass('active')
+        $(this).addClass('active').siblings('div').removeClass('active');
+        $('.language>div').removeClass('hover');
+    });
+    $('.language>div').hover(function() {
+        if (!$(this).hasClass('active')) {
+            $(this).addClass('hover').siblings('div').addClass('hover');
+        }
+    }, function() {
+        $('.language>div').removeClass('hover')
+        /* Stuff to do when the mouse leaves the element */
     });
 
     // var banner_n = 0;
@@ -55,13 +69,15 @@ $(function() {
 
     img_box('j_img', 407, 272,img_hover);
     img_box('j_img-2', 370, 246);
+    img_box('img_box_x', 504, 644);
 
     $(window).resize(function(event) {
-        // window.location.reload()
+        window.location.reload()
     //     /* Act on the event */
-        img_box('j_img', 407, 272,img_hover);
-        img_box('j_img-2', 370, 246);
-        banner_2();
+        // img_box('j_img', 407, 272,img_hover);
+        // img_box('j_img-2', 370, 246);
+        // img_box('img_box_x', 504, 644);
+        // banner_2();
     });
 
     function img_hover(cl,w,h){
@@ -105,6 +121,10 @@ $(function() {
             w2 = $p.width(),
             w1 = 308,
             w = n * 308;
+
+            if( w2 <= 308 ){
+                w2 = 308
+            }
 
         $box.css('width', w + 'px');
 

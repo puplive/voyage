@@ -182,16 +182,26 @@
     /*background: #fff;*/
     color: #C49E57;
     font-size: 13px;
+    font-family: Roboto-Regular,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif
 }
 
 .language>div:first-child {
     border-right: 1px solid #C49E57;
-    font-family: Roboto-Regular,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif
+    /*font-family: Roboto-Regular,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif*/
 }
 
 .language>div.active {
     color: #fff;
     background: #C49E57;
+}
+
+.language>div.hover{
+    background: #C49E57;
+    color:#fff;
+}
+.language>div.hover.active{
+    background: none;
+    color: #C49E57;
 }
 
 .nav_tab_btn {
@@ -442,6 +452,8 @@
     width: inherit;
     height: inherit;
     position: relative;
+    -webkit-transition: width .2s,height .2s,margin-top .2s,margin-left .2s;
+    -moz-transition: width .2s,height .2s,margin-top .2s,margin-left .2s;
     transition: width .2s,height .2s,margin-top .2s,margin-left .2s;
 }
 
@@ -453,6 +465,38 @@
     margin-left: -15px;
     /*animation:myfirst .2s forwards;*/
 
+}
+
+@-webkit-keyframes myfirst
+{
+    0%   {
+        width: 288px;
+        height: 480px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    100% {
+        width: 318px;
+        height: 528px;
+        margin-top: -24px;
+        margin-left: -15px;
+    }
+}
+
+@-moz-keyframes myfirst
+{
+    0%   {
+        width: 288px;
+        height: 480px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    100% {
+        width: 318px;
+        height: 528px;
+        margin-top: -24px;
+        margin-left: -15px;
+    }
 }
 
 @keyframes myfirst
@@ -806,8 +850,6 @@
     color: #C49E57;
     font-size: 36px;
     line-height: 58px;
-
-    
 }
 
 .title_2:after,
