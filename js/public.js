@@ -61,6 +61,7 @@ $(function() {
     $('#banner_nav ').on('click', '.banner_nav_item', function(event) {
         var $this = $(this),
             n = $this.index();
+        $this.addClass('active').siblings().removeClass('active');
         $banner_list.eq(n).animate({ opacity: 1 }, 800).siblings('.banner_item').animate({ opacity: 0 }, 800);
 
     });
@@ -176,68 +177,113 @@ $(function() {
     banner_2();
 
     function banner_2() {
+        var $item = $('#det_img_list>.det_img_item'),
+            n = $item.length,
+            f = $item.eq(0).html(),
+            l = $item.eq(n-1).html();
+
+        $('#det_img_list').append('<li class="det_img_item">'+f+'</li>')
+                          .prepend('<li class="det_img_item">'+l+'</li>');
+
         var $box = $('#det_img_box'),
             $list = $('#det_img_list'),
             $item = $('#det_img_list>.det_img_item'),
             $btn_list = $('.det_img_btn-item');
-        n = $item.length,
+            n = $item.length,
             w = $box.width(),
             h = w / 520 * 346,
-            w2 = n * w;
+            w2 = n * w,
+            x = -1,
+            boo = true;
+
+
 
         $list.width(w2).height(h);
         $item.width(w).height(h);
         $box.height(h);
 
-        $('#det_img_btn_r').off();
+        $list.css('marginLeft', x*w);
+
         $('#det_img_btn_r').on('click', function(event) {
-            var ml = parseInt($list.css('marginLeft')),
-                ml_2 = ml - w;
-            if (ml_2 < w - w2) {
-                ml_2 = w - w2;
+
+            if(boo){
+
+                boo = false;
+                x--;
+
+                $list.animate({ marginLeft: x*w }, {
+                    easing: 'swing',
+                    duration: 300,
+                    complete: function() {
+                        
+                        if( x <= 1-n ){
+                            x = -1;
+                            $list.css('marginLeft', -w);
+                        }
+                        $btn_list.removeClass('active');
+                        $btn_list.eq( -x-1 ).addClass('active');
+                        boo = true;
+                        // console.log(x)
+                    }
+                });
             }
-            $list.animate({ marginLeft: ml_2 }, {
-                easing: 'swing',
-                duration: 300,
-                complete: function() {
-                    $btn_list.removeClass('active');
-                    $btn_list.eq(-ml_2 / w).addClass('active');
-                }
-            });
         });
-        $('#det_img_btn_l').off();
         $('#det_img_btn_l').on('click', function(event) {
-            var ml = parseInt($list.css('marginLeft')),
-                ml_2 = ml + w;
-            if (ml_2 > 0) {
-                ml_2 = 0;
+            if (boo) {
+                boo = false;
+                x++;
+                $list.animate({ marginLeft: x*w }, {
+                    easing: 'swing',
+                    duration: 300,
+                    complete: function() {
+                        if( x > -1 ){
+                            x = -n+2;
+                            $list.css('marginLeft', x*w);
+                        }
+                        $btn_list.removeClass('active');
+                        $btn_list.eq( -x-1 ).addClass('active');
+                        boo = true;
+
+                        // console.log(x)
+
+                    }
+                });
             }
-            $list.animate({ marginLeft: ml_2 }, {
-                easing: 'swing',
-                duration: 300,
-                complete: function() {
-                    $btn_list.removeClass('active');
-                    $btn_list.eq(-ml_2 / w).addClass('active');
-                }
-            });
         });
 
-        $btn_list.off();
         $btn_list.on('click', function(event) {
-            var $this = $(this),
-                index = $this.index();
-            $btn_list.removeClass('active');
-            $this.addClass('active');
+            if(boo){
+                boo = false;
+                var $this = $(this),
+                    index = $this.index();
+                $btn_list.removeClass('active');
+                $this.addClass('active');
+                x = -index-1
+                $list.animate({ marginLeft: x * w }, {
+                    easing: 'swing',
+                    duration: 300,
+                    complete: function() {
+                        boo = true;
+                    }
+                });
+            }
+        });
 
-            $list.animate({ marginLeft: -index * w }, {
-                easing: 'swing',
-                duration: 300,
-                complete: function() {
-                    // $btn_list.removeClass('active');
-                    // $btn_list.eq(-ml_2/w).addClass('active');
-                }
-            });
+    }
 
+
+    // 弹窗
+    $('#submit_btn').on('click', function(event) {
+        popup('Thanks for your voice!');
+    });
+
+    function popup(txt){
+        $('.popup_con').html(txt);
+        var $pop = $('#popup');
+        $pop.show('400', function() {
+            setTimeout(function(){
+                $pop.hide('400');
+            },2500)
         });
 
     }
